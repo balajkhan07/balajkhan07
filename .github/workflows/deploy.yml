@@ -31,9 +31,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        # User site https://balajkhan.github.io requires base "/"
+        # Project site: https://balajkhan07.github.io/balajkhan/
         env:
-          VITE_BASE_PATH: /
+          VITE_BASE_PATH: /balajkhan/
         run: npm run build
 
       - name: Upload artifact
